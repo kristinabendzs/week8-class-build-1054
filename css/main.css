@@ -1,0 +1,86 @@
+.hidden {
+    display: none ;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+}
+
+header {
+    background-color: red;
+    padding:10px 0;
+}
+
+#main-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto; /*margin top and bottom set to 0, and left 
+    and right are set to auto/equal*/
+}
+
+.characters {
+    list-style-type: none;
+    padding: 0;
+}
+
+.characters li {
+    height: 220px;   
+}
+/* note the paths on each selectors - to change an id you have to specify more than its name
+you must note the list, the h#, the a, etc., for the declaration to take effect*/
+.characters li h3 {
+    color: white;
+    padding 15px 8px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/marvelSprites.jpg);
+}
+#carol {
+    background-position: -150px 0;
+}
+
+#clint {
+    background-position: -300px 0;
+}
+
+#hulk {
+    background-position: -450px 0;
+}
+
+#thor {
+    background-position: -600px 0;
+}
+
+#widow {
+    background-position: -750px 0;
+}
+
+#cap:hover, #carol:hover, #clint:hover, #hulk:hover, #thor:hover, #widow:hover {
+    background-position-y: 150px;
+    /*this selector/declaration essentially moves the image up 150px, revealing the black 
+    and white portion of the photo - though it makes it looks as it the changes are instantaneous,
+    the hover is important because it means that this change will only happen as someone hovers 
+    over the image*/
+}
+
+#instructions {
+    padding: 20px;
+    text-align: center;   
+}
+
+#footer h3 {
+    text-align: center;
+}
